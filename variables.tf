@@ -21,3 +21,11 @@ variable route53_zone_id {
 variable endpoint_configuration {
   default = "REGIONAL"
 }
+
+variable route53_record_type {
+  default = "A"
+}
+
+variable route53_record_evaluate_target_health {
+  default = false
+}
