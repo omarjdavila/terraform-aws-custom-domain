@@ -20,12 +20,15 @@ variable route53_zone_id {
 
 variable endpoint_configuration {
   default = "REGIONAL"
+  description = "An API endpoint type refers to the hostname of the API."
 }
 
 variable route53_record_type {
   default = "A"
+  description = "AWS Route 53 DNS record type."
 }
 
 variable route53_record_evaluate_target_health {
   default = false
+  description = "AWS Route 53 health checking."
 }
